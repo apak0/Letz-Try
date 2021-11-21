@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: kofont;
+  src: url(FTY_IRONHORSE_NCV.ttf);
+}
+
+body {
+  background-color: rgb(199, 48, 174);
+  height: 100%;
+  margin: 50px;
+}
+
+.backphoto {
+  color: red;
+}
+
+.container {
+  background-color: rgba(31, 215, 228, 0.2);
+
+  height: 935px;
+}
+
+.navbar {
+  background-color: hsla(0, 93%, 45%, 0);
+  display: flex;
+  justify-content: center;
+  font-family: kofont;
+  font-size: 50px;
+}
+
+.box {
+  position: relative;
+  padding: 50px;
+  margin: 25px 50px;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 10px;
+  background: #434343;
+  border-top-color: #373737;
+  border-right-color: #414141;
+  border-bottom-color: #414141;
+  border-left-color: #373737;
+}
+.box:hover {
+  transform: scale(1.2);
+  border-radius: 20px;
+  background-color: rgb(113, 75, 136);
+}
+
+.login-window {
+  position: relative;
+  top: 10px;
+  left: 1500px;
+  width: 200px;
+  border: 2px solid black;
+  background: #e1eec3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f05053,
+    #e1eec3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f05053,
+    #e1eec3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 15px;
+  margin: 10px;
+}
+#login-button {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #3887bb;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-family: kofont;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+#login-button:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.login-window input {
+  color: #dedede;
+  background: #414141;
+
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #373737;
+  border-right-color: #414141;
+  border-bottom-color: #414141;
+  border-left-color: #373737;
+  border-radius: 4px;
+  padding: 4px;
+  display: block;
+  width: 95%;
+  line-height: 1;
+}
+
+#forgotpass {
+  text-decoration: none;
+}
+
+.gallery {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picbox {
+  width: 250px;
+  height: 250px;
+  background: gray;
+  margin: 0px 14px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+#picture-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.picbox:hover {
+  transform: scale(1.2);
+  background: black;
+  z-index: 3;
+}
+
+.picbox:not(.picbox:hover) {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery div.picbox {
+  opacity: initial !important ;
+}
+
+.navbar .box:hover {
+  color: white;
+}
+
+/*  FOOTER */
+
+.footer {
+  display: block;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(160, 82, 82);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.fa {
+  margin-left: 5rem;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
